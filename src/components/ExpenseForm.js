@@ -4,6 +4,7 @@ import "react-dates/initialize";
 import { SingleDatePicker } from "react-dates";
 import swal from "sweetalert";
 import NavigationPrompt from "react-router-navigation-prompt";
+import { BigNumber } from "bignumber.js";
 
 export default class ExpenseForm extends React.Component {
   constructor(props) {
@@ -11,7 +12,11 @@ export default class ExpenseForm extends React.Component {
     this.state = {
       description: props.expense ? props.expense.description : "",
       note: props.expense ? props.expense.note : "",
-      amount: props.expense ? (props.expense.amount / 100).toString() : "",
+      amount: props.expense
+        ? BigNumber(props.expense.amount)
+            .div(100)
+            .toString(10)
+        : "",
       createdAt: props.expense ? moment(props.expense.createdAt) : moment(),
       calendarFocused: false,
       error: "",
@@ -56,10 +61,10 @@ export default class ExpenseForm extends React.Component {
   };
 
   onDateChange = createdAt => {
-    console.log(createdAt);
+    const formdirty = true;
 
     if (createdAt) {
-      this.setState(() => ({ createdAt }));
+      this.setState(() => ({ createdAt, onFormDirty: formdirty }));
     }
   };
 
@@ -96,15 +101,16 @@ export default class ExpenseForm extends React.Component {
 
       this.props.onSubmit({
         description: this.state.description,
-        amount: parseFloat(this.state.amount, 10) * 100,
+        amount: BigNumber(this.state.amount)
+          .multipliedBy(100)
+          .toString(10),
         createdAt: this.state.createdAt.valueOf(),
         note: this.state.note
       });
     }
   };
-  componentWillUnmount() {
-    console.log("component unmounted");
-  }
+
+  componentWillUnmount() {}
   hideModal = () => {
     swal.close();
   };

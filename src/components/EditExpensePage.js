@@ -30,10 +30,10 @@ const mapStateToProps = (state, props) => {
   };
 };
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch, props) => {
   return {
-    editExpense: (id, expense) => dispatch(editExpense(expense.id, expense)),
-    removeExpense: id => dispatchEvent(removeExpense(expense.id))
+    editExpense: (id, expense) => dispatch(editExpense(id, expense)),
+    removeExpense: id => dispatch(removeExpense(id))
   };
 };
 
