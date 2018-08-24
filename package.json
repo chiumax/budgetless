@@ -24,6 +24,7 @@
     "enzyme": "3.0.0",
     "enzyme-adapter-react-16": "1.0.0",
     "enzyme-to-json": "3.0.1",
+    "express": "4.15.4",
     "extract-text-webpack-plugin": "3.0.0",
     "jest": "20.0.4",
     "live-server": "^1.2.0",
