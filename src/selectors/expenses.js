@@ -1,4 +1,5 @@
 import moment from "moment";
+import { BigNumber } from "bignumber.js";
 
 // GET VISIBLE EXPENSES
 const getVisibleExpenses = (expenses, { text, sortBy, startDate, endDate }) => {
@@ -21,7 +22,7 @@ const getVisibleExpenses = (expenses, { text, sortBy, startDate, endDate }) => {
         return a.createdAt < b.createdAt ? 1 : -1;
       }
       if (sortBy === "amount") {
-        return a.amount < b.amount ? 1 : -1;
+        return BigNumber(a.amount).lt(b.amount) ? 1 : -1;
       }
     });
 };

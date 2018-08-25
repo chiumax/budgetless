@@ -11,7 +11,9 @@ exports[`should render ExpenseList with empty message 1`] = `
   </NavLink>
   <p />
   <p>
+    $0.00
     -
+    December 31st, 1969
   </p>
 </div>
 `;
@@ -31,9 +33,9 @@ exports[`should render ExpenseList with expenses 1`] = `
     1
   </p>
   <p>
-    195
+    $1.95
     -
-    0
+    December 31st, 1969
   </p>
 </div>
 `;

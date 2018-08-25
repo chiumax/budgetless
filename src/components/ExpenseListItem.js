@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import moment from "moment";
+import numberal from "numeral";
+import { BigNumber } from "bignumber.js";
 
 const ExpenseListItem = ({ description, amount, createdAt, id }) => (
   <div>
@@ -9,7 +11,8 @@ const ExpenseListItem = ({ description, amount, createdAt, id }) => (
     </NavLink>
     <p>{id}</p>
     <p>
-      {amount}-{createdAt}
+      {numberal(BigNumber(amount).div(100)).format("$0,0.00")}-
+      {moment(createdAt).format("MMMM Do, YYYY")}
     </p>
   </div>
 );
