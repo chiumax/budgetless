@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test the expenseCount for how many visible expenses 1`] = `
+<div>
+  <p>
+    Currently viewing 
+    23
+     
+    expenses
+     totalling
+     
+    $222.22
+  </p>
+</div>
+`;
+
+exports[`test the total amount of the expenses for the variable expensesTotal 1`] = `
+<div>
+  <p>
+    Currently viewing 
+    1
+     
+    expense
+     totalling
+     
+    $1.23
+  </p>
+</div>
+`;
