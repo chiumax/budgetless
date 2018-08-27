@@ -19,7 +19,7 @@ wip
 - [ ] Figure out a remember user login system?
 - [x] Since it will be a dynamic application, find a free dynamic web hosting service
 - [ ] Deploy my application with Heroku
-- [ ] Learn git and deploy through the cli and push to github repo also through cli
+- [ ] Learn git and deploy through the cli and push to github repo also through cli (can't be a baby and push/pull through github desktop)
 - [ ] Learn the difference between deployment builds and production builds
 - [ ] Figure out how to bundle all my javascript files into one with webpack 3
 - [ ] Figure out how to bundle all my scss files into one css file also with webpack 3
