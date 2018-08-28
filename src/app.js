@@ -4,6 +4,8 @@ import { Provider } from "react-redux";
 import AppRouter from "./routers/AppRouter";
 import configureStore from "./store/configureStore";
 
+import "./firebase/firebase";
+
 import getVisibleExpenses from "./selectors/expenses.js";
 import { addExpense, editExpense, removeExpense } from "./actions/expenses";
 import {
