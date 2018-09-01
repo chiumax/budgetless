@@ -8,6 +8,7 @@ wip
 - [ ] Set up Google Firebase for user authentication/login
 - [ ] Set up Google Fonts to try out third party fonts
 - [ ] Set up character limits and expense limits for the application
+- [ ] Set up a character limit counter as well
 - [ ] Set up test cases with jest and enzyme to test the functionality of react components and action functions (adding, removing expenses)
 - [ ] Style the application
 - [ ] Try out a third-party modals from something like SweetAlert
