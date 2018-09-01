@@ -10,12 +10,14 @@ exports[`should render ExpenseForm correctly 1`] = `
   >
     <input
       autoFocus={true}
+      maxLength="10"
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value=""
     />
     <input
+      maxLength="10"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
@@ -111,6 +113,7 @@ exports[`should render ExpenseForm correctly 1`] = `
       withPortal={false}
     />
     <textarea
+      maxLength="10"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
@@ -132,12 +135,14 @@ exports[`should render ExpenseForm with a pre-loaded expense correctly 1`] = `
   >
     <input
       autoFocus={true}
+      maxLength="10"
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value="Rent"
     />
     <input
+      maxLength="10"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
@@ -233,6 +238,7 @@ exports[`should render ExpenseForm with a pre-loaded expense correctly 1`] = `
       withPortal={false}
     />
     <textarea
+      maxLength="10"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
@@ -254,12 +260,14 @@ exports[`should render error for invalid form submission 1`] = `
   >
     <input
       autoFocus={true}
+      maxLength="10"
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value=""
     />
     <input
+      maxLength="10"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
@@ -355,6 +363,7 @@ exports[`should render error for invalid form submission 1`] = `
       withPortal={false}
     />
     <textarea
+      maxLength="10"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
@@ -379,12 +388,14 @@ exports[`should render error for invalid form submission 2`] = `
   >
     <input
       autoFocus={true}
+      maxLength="10"
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value=""
     />
     <input
+      maxLength="10"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
@@ -480,6 +491,7 @@ exports[`should render error for invalid form submission 2`] = `
       withPortal={false}
     />
     <textarea
+      maxLength="10"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
@@ -501,12 +513,14 @@ exports[`should set the note field on input change 1`] = `
   >
     <input
       autoFocus={true}
+      maxLength="10"
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value=""
     />
     <input
+      maxLength="10"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
@@ -602,6 +616,7 @@ exports[`should set the note field on input change 1`] = `
       withPortal={false}
     />
     <textarea
+      maxLength="10"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value="New Note"

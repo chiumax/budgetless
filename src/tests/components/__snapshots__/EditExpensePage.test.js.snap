@@ -12,6 +12,7 @@ exports[`should render EditExpensePage correctly 1`] = `
         "note": "",
       }
     }
+    expenseLength={false}
     onSubmit={[Function]}
   />
   <button

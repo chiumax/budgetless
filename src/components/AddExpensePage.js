@@ -5,14 +5,19 @@ import { startAddExpense } from "../actions/expenses";
 
 export class AddExpensePage extends React.Component {
   onSubmit = expense => {
-    this.props.startAddExpense(expense);
+    if (this.props.expenseLength === false) {
+      this.props.startAddExpense(expense);
+    }
     this.props.history.push("/");
   };
   render() {
     return (
       <div>
         <h1>Add an expense</h1>
-        <ExpenseForm onSubmit={this.onSubmit} />
+        <ExpenseForm
+          onSubmit={this.onSubmit}
+          expenseLength={this.props.expenseLength}
+        />
       </div>
     );
   }
@@ -24,7 +29,13 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
+const mapStateToProps = state => {
+  return {
+    expenseLength: state.expenses.length >= 5
+  };
+};
+
 export default connect(
-  undefined,
+  mapStateToProps,
   mapDispatchToProps
 )(AddExpensePage);

@@ -98,7 +98,17 @@ export default class ExpenseForm extends React.Component {
           confirm: { text: "Ok", value: true }
         }
       }));
-
+      if (this.props.expenseLength === true) {
+        this.setState(() => ({
+          modalIcon: "error",
+          modalButtons: {
+            confirm: { text: "Ok", value: true }
+          },
+          modalText:
+            "We're sorry for limiting this account to 5 expenses since we are currently hosted using a free service. ",
+          modalTitle: "We're sorry."
+        }));
+      }
       this.props.onSubmit({
         description: this.state.description,
         amount: BigNumber(this.state.amount)
@@ -147,12 +157,14 @@ export default class ExpenseForm extends React.Component {
             autoFocus
             value={this.state.description}
             onChange={this.onDescriptionChange}
+            maxLength="10"
           />
           <input
             type="text"
             placeholder="Amount"
             value={this.state.amount}
             onChange={this.onAmountChange}
+            maxLength="10"
           />
           <SingleDatePicker
             date={this.state.createdAt}
@@ -166,6 +178,7 @@ export default class ExpenseForm extends React.Component {
             value={this.state.note}
             onChange={this.onNoteChange}
             placeholder="Add a note for your expense (optional)"
+            maxLength="10"
           />
           <button>{this.props.expense ? "Edit Expense" : "Add Expense"}</button>
         </form>

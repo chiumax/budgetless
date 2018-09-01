@@ -6,6 +6,7 @@ exports[`should handle onSubmit 1`] = `
     Add an expense
   </h1>
   <ExpenseForm
+    expenseLength={false}
     onSubmit={[Function]}
   />
 </div>
@@ -17,6 +18,7 @@ exports[`should render AddExpensePage correctly 1`] = `
     Add an expense
   </h1>
   <ExpenseForm
+    expenseLength={false}
     onSubmit={[Function]}
   />
 </div>
