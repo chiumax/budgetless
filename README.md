@@ -23,3 +23,7 @@ wip
 - [ ] Learn the difference between deployment builds and production builds
 - [ ] Figure out how to bundle all my javascript files into one with webpack 3
 - [ ] Figure out how to bundle all my scss files into one css file also with webpack 3
+- [ ] Add a login feature that doesn't require a google account to log in
+- [ ] Learn component animations
+- [ ] React Router + Page change animations
+
