@@ -3,6 +3,8 @@ wip
 
 # Planned Features
 
+_Includes everything I plan to learn._
+
 ### App Features
 
 - [ ] Track and record a list of expenses
