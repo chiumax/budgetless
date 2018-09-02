@@ -6,18 +6,21 @@ exports[`should render ExpenseForm correctly 1`] = `
     when={false}
   />
   <form
+    className="form"
     onSubmit={[Function]}
   >
     <input
       autoFocus={true}
-      maxLength="10"
+      className="text-input"
+      maxLength="100"
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value=""
     />
     <input
-      maxLength="10"
+      className="text-input"
+      maxLength="30"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
@@ -113,14 +116,19 @@ exports[`should render ExpenseForm correctly 1`] = `
       withPortal={false}
     />
     <textarea
-      maxLength="10"
+      className="textarea"
+      maxLength="600"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
     />
-    <button>
-      Add Expense
-    </button>
+    <div>
+      <button
+        className="button button--add"
+      >
+        Add Expense
+      </button>
+    </div>
   </form>
 </div>
 `;
@@ -131,18 +139,21 @@ exports[`should render ExpenseForm with a pre-loaded expense correctly 1`] = `
     when={false}
   />
   <form
+    className="form"
     onSubmit={[Function]}
   >
     <input
       autoFocus={true}
-      maxLength="10"
+      className="text-input"
+      maxLength="100"
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value="Rent"
     />
     <input
-      maxLength="10"
+      className="text-input"
+      maxLength="30"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
@@ -238,14 +249,19 @@ exports[`should render ExpenseForm with a pre-loaded expense correctly 1`] = `
       withPortal={false}
     />
     <textarea
-      maxLength="10"
+      className="textarea"
+      maxLength="600"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
     />
-    <button>
-      Edit Expense
-    </button>
+    <div>
+      <button
+        className="button button--add"
+      >
+        Edit Expense
+      </button>
+    </div>
   </form>
 </div>
 `;
@@ -256,18 +272,21 @@ exports[`should render error for invalid form submission 1`] = `
     when={false}
   />
   <form
+    className="form"
     onSubmit={[Function]}
   >
     <input
       autoFocus={true}
-      maxLength="10"
+      className="text-input"
+      maxLength="100"
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value=""
     />
     <input
-      maxLength="10"
+      className="text-input"
+      maxLength="30"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
@@ -363,14 +382,19 @@ exports[`should render error for invalid form submission 1`] = `
       withPortal={false}
     />
     <textarea
-      maxLength="10"
+      className="textarea"
+      maxLength="600"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
     />
-    <button>
-      Add Expense
-    </button>
+    <div>
+      <button
+        className="button button--add"
+      >
+        Add Expense
+      </button>
+    </div>
   </form>
 </div>
 `;
@@ -380,22 +404,27 @@ exports[`should render error for invalid form submission 2`] = `
   <withRouter(NavigationPrompt)
     when={false}
   />
-  <p>
-    Please provide a description and an amount value.
-  </p>
   <form
+    className="form"
     onSubmit={[Function]}
   >
+    <p
+      className="form__error"
+    >
+      Please provide a description and an amount value.
+    </p>
     <input
       autoFocus={true}
-      maxLength="10"
+      className="text-input"
+      maxLength="100"
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value=""
     />
     <input
-      maxLength="10"
+      className="text-input"
+      maxLength="30"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
@@ -491,14 +520,19 @@ exports[`should render error for invalid form submission 2`] = `
       withPortal={false}
     />
     <textarea
-      maxLength="10"
+      className="textarea"
+      maxLength="600"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
     />
-    <button>
-      Add Expense
-    </button>
+    <div>
+      <button
+        className="button button--add"
+      >
+        Add Expense
+      </button>
+    </div>
   </form>
 </div>
 `;
@@ -509,18 +543,21 @@ exports[`should set the note field on input change 1`] = `
     when={true}
   />
   <form
+    className="form"
     onSubmit={[Function]}
   >
     <input
       autoFocus={true}
-      maxLength="10"
+      className="text-input"
+      maxLength="100"
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value=""
     />
     <input
-      maxLength="10"
+      className="text-input"
+      maxLength="30"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
@@ -616,14 +653,19 @@ exports[`should set the note field on input change 1`] = `
       withPortal={false}
     />
     <textarea
-      maxLength="10"
+      className="textarea"
+      maxLength="600"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value="New Note"
     />
-    <button>
-      Add Expense
-    </button>
+    <div>
+      <button
+        className="button button--add"
+      >
+        Add Expense
+      </button>
+    </div>
   </form>
 </div>
 `;

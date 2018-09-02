@@ -1,36 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render Header correctly 1`] = `
-<header>
-  <h1>
-    Expensify
-  </h1>
-  <NavLink
-    activeClassName="is-active"
-    ariaCurrent="true"
-    exact={true}
-    to="/"
+<header
+  className="header"
+>
+  <div
+    className="content-container"
   >
-    Go Home
-  </NavLink>
-  <NavLink
-    activeClassName="is-active"
-    ariaCurrent="true"
-    to="/create"
-  >
-    Go Create
-  </NavLink>
-  <NavLink
-    activeClassName="is-active"
-    ariaCurrent="true"
-    to="/help"
-  >
-    Go Help
-  </NavLink>
-  <button
-    onClick={[Function]}
-  >
-    Logout
-  </button>
+    <div
+      className="header__content"
+    >
+      <Link
+        className="header__title"
+        replace={false}
+        to="/dashboard"
+      >
+        <h1>
+          Budgetless
+        </h1>
+      </Link>
+      <Component
+        onClick={[Function]}
+      />
+    </div>
+  </div>
 </header>
 `;

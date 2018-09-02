@@ -3,7 +3,7 @@ import { history } from "../routers/AppRouter";
 
 export const login = uid => ({
   type: "LOGIN",
-  uid
+  uid: uid
 });
 
 export const startLogin = () => {

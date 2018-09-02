@@ -2,28 +2,80 @@
 
 exports[`test the expenseCount for how many visible expenses 1`] = `
 <div>
-  <p>
-    Currently viewing 
-    23
-     
-    expenses
-     totalling
-     
-    $222.22
-  </p>
+  <div
+    className="page-header"
+  >
+    <div
+      className="content-container"
+    >
+      <h1
+        className="page-header__title"
+      >
+        Currently viewing 
+        <span>
+          23
+        </span>
+         
+        expenses
+         
+        totalling
+         
+        <span>
+          $222.22
+        </span>
+      </h1>
+      <div
+        className="page-header__actions"
+      >
+        <Link
+          className="button button--add"
+          replace={false}
+          to="/create"
+        >
+          Add Expense
+        </Link>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`test the total amount of the expenses for the variable expensesTotal 1`] = `
 <div>
-  <p>
-    Currently viewing 
-    1
-     
-    expense
-     totalling
-     
-    $1.23
-  </p>
+  <div
+    className="page-header"
+  >
+    <div
+      className="content-container"
+    >
+      <h1
+        className="page-header__title"
+      >
+        Currently viewing 
+        <span>
+          1
+        </span>
+         
+        expense
+         
+        totalling
+         
+        <span>
+          $1.23
+        </span>
+      </h1>
+      <div
+        className="page-header__actions"
+      >
+        <Link
+          className="button button--add"
+          replace={false}
+          to="/create"
+        >
+          Add Expense
+        </Link>
+      </div>
+    </div>
+  </div>
 </div>
 `;
