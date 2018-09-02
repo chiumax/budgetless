@@ -27,4 +27,6 @@ wip
 - [ ] Add a login feature that doesn't require a google account to log in
 - [ ] Learn component animations
 - [ ] React Router + Page change animations
+- [ ] Add a footer
+- [ ] Have the header follow scroll
 
