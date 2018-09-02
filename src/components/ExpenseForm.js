@@ -149,23 +149,29 @@ export default class ExpenseForm extends React.Component {
             }
           }}
         </NavigationPrompt>
-        {this.state.error && <p>{this.state.error}</p>}
-        <form onSubmit={this.onSubmit}>
+
+        <form onSubmit={this.onSubmit} className="form">
+          {this.state.error && (
+            <p className="form__error">{this.state.error}</p>
+          )}
           <input
             type="text"
             placeholder="Description"
+            className="text-input"
             autoFocus
             value={this.state.description}
             onChange={this.onDescriptionChange}
-            maxLength="50"
+            maxLength="100"
           />
           <input
             type="text"
             placeholder="Amount"
+            className="text-input"
             value={this.state.amount}
             onChange={this.onAmountChange}
-            maxLength="20"
+            maxLength="30"
           />
+
           <SingleDatePicker
             date={this.state.createdAt}
             onDateChange={this.onDateChange}
@@ -174,13 +180,19 @@ export default class ExpenseForm extends React.Component {
             numberOfMonths={1}
             isOutsideRange={() => false}
           />
+
           <textarea
             value={this.state.note}
             onChange={this.onNoteChange}
             placeholder="Add a note for your expense (optional)"
-            maxLength="500"
+            maxLength="600"
+            className="textarea"
           />
-          <button>{this.props.expense ? "Edit Expense" : "Add Expense"}</button>
+          <div>
+            <button className="button button--add">
+              {this.props.expense ? "Edit Expense" : "Add Expense"}
+            </button>
+          </div>
         </form>
       </div>
     );

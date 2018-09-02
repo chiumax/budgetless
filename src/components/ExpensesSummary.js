@@ -3,14 +3,29 @@ import { connect } from "react-redux";
 import getExpensesTotal from "../selectors/expenses-total";
 import numeral from "numeral";
 import { BigNumber } from "bignumber.js";
+import { Link } from "react-router-dom";
 
 export const ExpensesSummary = props => (
   <div>
-    <p>
-      Currently viewing {props.expenseCount}{" "}
-      {props.expenseCount > 1 ? "expenses" : "expense"} totalling{" "}
-      {numeral(BigNumber(props.expensesTotal).div(100)).format("$0,0.00")}
-    </p>
+    <div className="page-header">
+      <div className="content-container">
+        <h1 className="page-header__title">
+          Currently viewing <span>{props.expenseCount}</span>{" "}
+          {props.expenseCount > 1 || props.expenseCount == 0
+            ? "expenses"
+            : "expense"}{" "}
+          totalling{" "}
+          <span>
+            {numeral(BigNumber(props.expensesTotal).div(100)).format("$0,0.00")}
+          </span>
+        </h1>
+        <div className="page-header__actions">
+          <Link to="/create" className="button button--add">
+            Add Expense
+          </Link>
+        </div>
+      </div>
+    </div>
   </div>
 );
 

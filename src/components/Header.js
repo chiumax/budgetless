@@ -3,17 +3,22 @@ import NavigationPrompt from "react-router-navigation-prompt";
 import { BrowserRouter, Route, Switch, Link, NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 import { startLogout } from "../actions/auth";
+import Logout from "./LogoutButton";
 
 export const Header = ({ startLogout }) => (
-  <header>
-    <h1>Expensify</h1>
-    <NavLink to="/dashboard" activeClassName="is-active">
-      Go Home
-    </NavLink>
-    <NavLink to="/create" activeClassName="is-active">
-      Go Create
-    </NavLink>
-    <button onClick={startLogout}>Logout</button>
+  <header className="header">
+    <div className="content-container">
+      <div className="header__content">
+        <Link className="header__title" to="/dashboard">
+          <h1>Budgetless</h1>
+        </Link>
+        <Logout onClick={startLogout} />
+        {/* In case if react-social-buttons doesn't work out so well 
+        <button className="button button--link" onClick={startLogout}>
+          Logout
+        </button> */}
+      </div>
+    </div>
   </header>
 );
 

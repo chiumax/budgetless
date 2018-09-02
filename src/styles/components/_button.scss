@@ -1,0 +1,27 @@
+.button {
+  background: $light_red;
+  color: white;
+  border: none;
+  display: inline-block;
+  font-size: $font-size-large;
+  font-weight: 300;
+  padding: $s-size;
+  text-decoration: none;
+  line-height: 1;
+  transition: background 0.3s ease;
+}
+.button--add:hover {
+  background: #c23616;
+}
+
+.button--link {
+  background: none;
+}
+
+.button--secondary {
+  background: #888;
+}
+
+.button--secondary:hover {
+  background: rgb(105, 105, 105);
+}

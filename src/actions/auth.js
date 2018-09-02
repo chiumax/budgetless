@@ -1,4 +1,5 @@
 import { firebase, googleAuthProvider } from "../firebase/firebase";
+import { history } from "../routers/AppRouter";
 
 export const login = uid => ({
   type: "LOGIN",

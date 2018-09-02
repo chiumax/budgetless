@@ -1,10 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
+  color: $dark-grey;
   font-family: Helvetica, Arial, sans-serif;
   font-size: $m-size;
+  line-height: 1.6;
 }
 
 button {
@@ -17,4 +23,38 @@ button:disabled {
 
 .is-active {
   font-weight: bold;
+}
+
+.DateInput {
+  position: static !important;
+}
+.DateInput_1 {
+  position: static !important;
+}
+
+.CalendarDay__hovered_span:hover,
+.CalendarDay__hovered_span,
+.CalendarDay__selected_span {
+  background: $verylight-red !important;
+  border: 1px solid #ff7263 !important;
+  color: $dark-red !important;
+}
+
+.CalendarDay__selected,
+.CalendarDay__selected_span:hover,
+.CalendarDay__default:active,
+.CalendarDay__selected:active,
+.CalendarDay__selected:hover {
+  background: $light-red !important;
+  color: #ffffff !important;
+  border: 1px solid $light-red !important;
+}
+
+.DayPickerKeyboardShortcuts_show__bottomRight {
+  border-top: 26px solid transparent;
+  border-right: 33px solid $dark-red !important;
+}
+
+.DateInput_input__focused {
+  border-bottom: 2px solid $dark-red !important;
 }
