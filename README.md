@@ -29,4 +29,5 @@ wip
 - [ ] React Router + Page change animations
 - [ ] Add a footer
 - [ ] Have the header follow scroll
+- [ ] Check out babel-polyfill
 
