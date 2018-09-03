@@ -21,6 +21,7 @@ _Includes everything I plan to learn._
 - [ ] Try out react redux to make state/store/props variables more consistent and easier to track
 - [ ] Style the application
 - [ ] Learn component animations
+- [ ] Setup mobile environment
 
 
 ### Google Firebase Features
