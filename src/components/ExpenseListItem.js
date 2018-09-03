@@ -13,7 +13,10 @@ const ExpenseListItem = ({ description, amount, createdAt, id }) => (
       </span>
     </div>
     <h3 className="list-item__data">
-      {numeral(BigNumber(amount).div(100)).format("$0,0.00")}
+      {"$" +
+        BigNumber(amount)
+          .div(100)
+          .toFormat(2)}
     </h3>
   </Link>
 );

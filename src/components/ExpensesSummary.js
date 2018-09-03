@@ -16,7 +16,10 @@ export const ExpensesSummary = props => (
             : "expense"}{" "}
           totalling{" "}
           <span>
-            {numeral(BigNumber(props.expensesTotal).div(100)).format("$0,0.00")}
+            {"$" +
+              BigNumber(props.expensesTotal)
+                .div(100)
+                .toFormat(2)}
           </span>
         </h1>
         <div className="page-header__actions">
