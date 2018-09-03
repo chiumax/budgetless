@@ -35,6 +35,7 @@ _Includes everything I plan to learn._
 - [x] Style the application
 - [x] Learn component animations
 - [x] Setup mobile environment
+- [ ] Style 404 page
 
 
 ### Google Firebase Features
