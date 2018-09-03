@@ -1,0 +1,28 @@
+.whole-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  display: flex;
+  flex-shrink: 0;
+  padding: 3 rem;
+  text-align: center;
+  margin-top: auto;
+  background-color: #82172b;
+  color: $light-grey;
+  text-decoration: none;
+}
+
+.link-hover {
+  text-decoration: none;
+  color: $light-grey;
+}
+.link-hover:hover {
+  color: $light-grey;
+  text-decoration: underline;
+}

@@ -16,3 +16,9 @@
   align-items: center;
   padding: $s-size 0;
 }
+
+.header__sticky {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}

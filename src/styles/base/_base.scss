@@ -11,6 +11,8 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: $m-size;
   line-height: 1.6;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 button {
@@ -57,4 +59,8 @@ button:disabled {
 
 .DateInput_input__focused {
   border-bottom: 2px solid $dark-red !important;
+}
+
+.scrollbar {
+  overflow-y: scroll;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { startEditExpense, startRemoveExpense } from "../actions/expenses";
 import ExpenseForm from "./ExpenseForm";
+import Anime from "react-anime";
 
 export class EditExpensePage extends React.Component {
   onSubmit = expense => {
@@ -15,21 +16,29 @@ export class EditExpensePage extends React.Component {
   render() {
     return (
       <div>
-        <div className="page-header">
-          <div className="content-container">
-            <h1 className="page-header__title">Edit Expense</h1>
+        <Anime
+          easing="easeInExpo"
+          duration={1000}
+          direction="normal"
+          translateX={["-13rem", 0]}
+          opacity={[0, 1]}
+        >
+          <div className="page-header">
+            <div className="content-container">
+              <h1 className="page-header__title">Edit Expense</h1>
+            </div>
           </div>
-        </div>
-        <div className="content-container">
-          <ExpenseForm
-            expense={this.props.expense}
-            onSubmit={this.onSubmit}
-            expenseLength={false}
-          />
-          <button className="button button--secondary" onClick={this.onClick}>
-            Remove Expense
-          </button>
-        </div>
+          <div className="content-container">
+            <ExpenseForm
+              expense={this.props.expense}
+              onSubmit={this.onSubmit}
+              expenseLength={false}
+            />
+            <button className="button button--secondary" onClick={this.onClick}>
+              Remove Expense
+            </button>
+          </div>
+        </Anime>
       </div>
     );
   }
