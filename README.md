@@ -46,8 +46,11 @@ _Includes everything I plan to learn._
 - [x] Since it will be a dynamic application, find a free dynamic web hosting service
 - [x] Deploy my application with Heroku
 
+## Code Style :art:
 
+-   I use the [Prettier](https://prettier.io/) code formatter for js (default settings from [atom-beautify](https://github.com/Glavin001/atom-beautify)).
 
+    [<img src ="https://prettier.io/icon.png" alt="prettier logo" width="100" height="100">](https://prettier.io/)
 
 
 
