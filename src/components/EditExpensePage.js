@@ -6,7 +6,10 @@ import Anime from "react-anime";
 
 export class EditExpensePage extends React.Component {
   onSubmit = expense => {
-    this.props.startEditExpense(this.props.expense.id, expense);
+    if (this.props.expenseLength === false) {
+      this.props.startEditExpense(this.props.expense.id, expense);
+    }
+
     this.props.history.push("/");
   };
   onClick = () => {
