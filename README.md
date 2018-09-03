@@ -1,5 +1,18 @@
+# Budgetless! :dollar:
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-wip
+
+Website that helps you record and keep track of expenses.
+
+Check it out here: https://budgetless.herokuapp.com/
+
+If you have any suggestions on making this project any better I'd appreciate it.
+
+Please create an issue if something wrong happens.
+
+## Resources/Dependencies :books:
+
+There's a lot, just look in my package.json. Thanks
 
 # Planned Features
 
