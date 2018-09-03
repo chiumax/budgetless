@@ -35,6 +35,7 @@ _Includes everything I plan to learn._
 - [x] Style the application
 - [x] Learn component animations
 - [x] Setup mobile environment
+- [ ] Style 404 page
 
 
 ### Google Firebase Features
@@ -61,7 +62,7 @@ _Includes everything I plan to learn._
 
 ## Code Style :art:
 
--   I use the [Prettier](https://prettier.io/) code formatter for js (default settings from [atom-beautify](https://github.com/Glavin001/atom-beautify)).
+-   I use the [Prettier](https://prettier.io/) code formatter for js (default settings from the vs-code extension)).
 
     [<img src ="https://prettier.io/icon.png" alt="prettier logo" width="100" height="100">](https://prettier.io/)
 
