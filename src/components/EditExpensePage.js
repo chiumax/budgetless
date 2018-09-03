@@ -51,7 +51,8 @@ const mapStateToProps = (state, props) => {
   return {
     expense: state.expenses.find(expense => {
       return expense.id === props.match.params.id;
-    })
+    }),
+    expenseLength: state.expenses.length >= 5
   };
 };
 
