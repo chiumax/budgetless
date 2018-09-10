@@ -46,7 +46,6 @@ _Includes everything I plan to learn._
 - [x] Figure out how to redirect user to login page if user is not authenticated/logged in
 - [ ] Add multiple login services. ex. Google, Facebook, and Email
 - [ ] Add a login feature that doesn't require a google account to log in
-- [ ] Figure out a remember user login system
 
 
 ### Setup Features
