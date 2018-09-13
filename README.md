@@ -4,7 +4,7 @@
 
 Website that helps you record and keep track of expenses.
 
-Check it out here: https://budgetless.herokuapp.com/
+Check it out here: ~~https://budgetless.herokuapp.com/~~ (I use a free hosting service and I need it for other things as well).
 
 If you have any suggestions on making this project any better I'd appreciate it.
 
@@ -14,6 +14,7 @@ Please create an issue if something wrong happens.
 
 There's a lot, just look in my package.json. Thanks
 
+## Screenshots :camera:
 # Planned Features
 
 _Includes everything I plan to learn._
