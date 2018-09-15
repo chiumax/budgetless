@@ -15,7 +15,13 @@ Please create an issue if something wrong happens.
 There's a lot, just look in my package.json. Thanks
 
 ## Screenshots / Demo :camera:
-![mobile](https://gfycat.com/EnragedWanBelugawhale)
+![desktop](https://media.giphy.com/media/60s1rJDFeQtMxnAZOw/giphy.gif)
+
+![edit-remove](https://media.giphy.com/media/5eG2mXyAWtBS0U5xuu/giphy.gif)
+
+![mobile](https://thumbs.gfycat.com/EnragedWanBelugawhale-size_restricted.gif)
+
+
 
 # Planned Features
 
@@ -24,7 +30,6 @@ _Includes everything I plan to learn._
 ### App Features
 
 - [x] Track and record a list of expenses
-- [ ] Set up Google Fonts to try out third party fonts
 - [x] Set up character limits and expense limits for the application
 - [x] Set up a character limit counter as well
 - [x] Set up test cases with jest and enzyme to test the functionality of react components and action functions (adding, removing expenses)
@@ -38,7 +43,6 @@ _Includes everything I plan to learn._
 - [x] Style the application
 - [x] Learn component animations
 - [x] Setup mobile environment
-- [ ] Style 404 page
 
 
 ### Google Firebase Features
@@ -47,8 +51,7 @@ _Includes everything I plan to learn._
 - [x] Make sure Google Firebase can interact with react redux store
 - [x] Set up Google Firebase for user authentication/login
 - [x] Figure out how to redirect user to login page if user is not authenticated/logged in
-- [ ] Add multiple login services. ex. Google, Facebook, and Email
-- [ ] Add a login feature that doesn't require a google account to log in
+
 
 
 ### Setup Features
