@@ -14,7 +14,9 @@ Please create an issue if something wrong happens.
 
 There's a lot, just look in my package.json. Thanks
 
-## Screenshots :camera:
+## Screenshots / Demo :camera:
+![mobile](https://gfycat.com/EnragedWanBelugawhale)
+
 # Planned Features
 
 _Includes everything I plan to learn._
